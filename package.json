@@ -2,7 +2,7 @@
   "name": "data-spider-puppeteer",
   "version": "0.0.1",
   "description": "spider data from websites",
-  "main": "app.js",
+  "main": "./src/app.js",
   "engines": {
     "node": "8.11.1"
   },
