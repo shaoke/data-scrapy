@@ -2,7 +2,7 @@
   "name": "data-spider-puppeteer",
   "version": "0.0.1",
   "description": "spider data from websites",
-  "main": "./src/app.js",
+  "main": "./lib/app.js",
   "engines": {
     "node": "8.11.1"
   },
@@ -11,7 +11,7 @@
     "puppeteer": "^1.3.0"
   },
   "scripts":{
-    "start": "node app.js",
+    "start": "node ./lib/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "shaokexu@gmail.com"
