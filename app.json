@@ -1,0 +1,24 @@
+{
+  "name": "data-spider-puppeteer",
+  "description": "spider data from websites",
+  "keywords": [
+    "puppeteer",
+    "data spider"
+  ],
+  "website": "https://github.com/shaoke/data-spider-puppeteer",
+  "repository": "https://github.com/shaoke/data-spider-puppeteer",
+  "env": {
+  },
+  "success_url": "/",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack"
+    },
+    {
+      "url": "http://github.com/heroku/heroku-buildpack-nodejs.git"
+    },
+    {
+      "url": "https://github.com/debitoor/heroku-buildpack-converter-fonts"
+    }
+  ]
+}
