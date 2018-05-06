@@ -42,9 +42,13 @@ function createRouter(){
     if(urlToScreenshot){
       logger.info("urlToScreenshot: ", urlToScreenshot);
       (async()=>{
-        const browser = await puppeteer.launch({
+        let params = {
           args: ['--no-sandbox', '--disable-setuid-sandbox']
-        });
+        };
+        if(config.DEBUG_MODE&&config.NODE_ENV==='development'){
+          params.headless = false;
+        }
+        const browser = await puppeteer.launch(params);
 
         const page = await browser.newPage();
         await page.goto(urlToScreenshot);
